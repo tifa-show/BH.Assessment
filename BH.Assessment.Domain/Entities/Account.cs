@@ -4,6 +4,11 @@ namespace BH.Assessment.Domain.Entities;
 
 public class Account : AuditableEntity
 {
+    public Account()
+    {
+        Id = Guid.NewGuid();
+    }
+
     public Guid Id { get; set; }
     public string Code { get; set; }
     public AccountType AccountType { get; set; }
