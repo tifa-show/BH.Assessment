@@ -15,7 +15,7 @@ public class Account : AuditableEntity
     public Guid CustomerId { get; set; }
     public Customer Customer { get; set; }
 
-    public ICollection<Transaction> Transactions { get; set; }
+    public ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
 }
 
 public enum AccountType

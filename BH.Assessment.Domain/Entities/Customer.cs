@@ -8,7 +8,5 @@ public class Customer : AuditableEntity
     public string Name { get; set; }
     public string Surname { get; set; }
     public double Balance { get; set; }
-
-    public Guid AccountId { get; set; }
     public Account Account { get; set; }
 }

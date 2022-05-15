@@ -18,6 +18,12 @@ public class CustomerRepository : BaseRepository<Customer>, ICustomerRepository
         return await _context.Customers.AnyAsync(m => m.Id == id).ConfigureAwait(false);
     }
 
+    public async Task<bool> IsConnectedWithOtherAccount(Guid id)
+    {
+        var data = await _context.Customers.FindAsync(id).ConfigureAwait(false);
+        return data?.Account is null;
+    }
+
     public async Task<Customer> LoadCustomerWithRelatedTransactions(Guid id)
     {
         return await _context.Customers

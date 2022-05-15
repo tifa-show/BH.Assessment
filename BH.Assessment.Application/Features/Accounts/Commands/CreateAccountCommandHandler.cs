@@ -32,10 +32,13 @@ public class CreateAccountCommandHandler : IRequestHandler<CreateAccountCommand,
             return response;
         }
 
-        var account = new Account { CustomerId = request.CustomerId, AccountType = AccountType.CurrentAccount };
+        var account = new Account { CustomerId = request.CustomerId, AccountType = AccountType.CurrentAccount, Code = String.Empty };
         if (request.InitCredit > 0)
         {
             var transaction = _mapper.Map<Transaction>(request);
+            //transaction.Account = account;
+            //transaction.AccountId = account.Id;
+
             account.Transactions.Add(transaction);
         }
 

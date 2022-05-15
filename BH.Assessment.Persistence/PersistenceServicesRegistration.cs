@@ -10,7 +10,12 @@ public static class PersistenceServicesRegistration
     public static void AddPersistenceServices(this IServiceCollection services)
     {
         services.AddDbContext<BhAssessmentContext>(opt =>
-            opt.UseInMemoryDatabase("BHAssessment"));
+            opt.UseSqlite("Data Source=BHAssessment.db"));
+
+
+        //services.AddDbContext<BhAssessmentContext>(options =>
+        //    options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BHAssessment;Trusted_Connection=True;"));
+
 
         services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
         services.AddScoped<ICustomerRepository, CustomerRepository>();
