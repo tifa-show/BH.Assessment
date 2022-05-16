@@ -1,4 +1,5 @@
-﻿using BH.Assessment.Application.Features.Customers.Queries;
+﻿using BH.Assessment.Application.Features.Customers.Commands;
+using BH.Assessment.Application.Features.Customers.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,6 +22,14 @@ public class CustomerController : ControllerBase
     public async Task<ActionResult<UserInformationVm>> GetUserInformation([FromQuery] Guid id)
     {
         var response = await _mediator.Send(new GetUserInformationQuery { CustomerId = id }).ConfigureAwait(false);
+        return Ok(response);
+    }
+
+
+    [HttpPost(Name = "addCustomer")]
+    public async Task<ActionResult<CreateCustomerResponse>> CreateCustomer([FromBody] CreateCustomerCommand command)
+    {
+        var response = await _mediator.Send(command);
         return Ok(response);
     }
 }

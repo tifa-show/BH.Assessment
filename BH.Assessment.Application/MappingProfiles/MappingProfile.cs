@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BH.Assessment.Application.Features.Accounts.Commands;
+using BH.Assessment.Application.Features.Customers.Commands;
 using BH.Assessment.Application.Features.Customers.Queries;
 using BH.Assessment.Domain.Entities;
 
@@ -25,5 +26,7 @@ public class MappingProfile : Profile
 
         CreateMap<Account, CreateAccountDto>()
             .ForMember(dest => dest.AccountId, expression => expression.MapFrom(src => src.Id));
+
+        CreateMap<CreateCustomerCommand, Customer>();
     }
 }

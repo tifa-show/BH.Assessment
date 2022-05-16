@@ -42,9 +42,6 @@ public class CreateAccountCommandHandler : IRequestHandler<CreateAccountCommand,
         if (request.InitCredit > 0)
         {
             var transaction = _mapper.Map<Transaction>(request);
-            //transaction.Account = account;
-            //transaction.AccountId = account.Id;
-
             account.Transactions.Add(transaction);
         }
 
