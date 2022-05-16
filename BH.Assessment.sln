@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BH.Assessment.Domain", "BH.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BH.Assessment.Application", "BH.Assessment.Application\BH.Assessment.Application.csproj", "{C8B27FFC-E798-4F42-AEDC-2C9016C5075E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH.Assessment.Persistence", "BH.Assessment.Persistence\BH.Assessment.Persistence.csproj", "{0196C531-C8E3-426E-8577-ECE68D211D09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BH.Assessment.Persistence", "BH.Assessment.Persistence\BH.Assessment.Persistence.csproj", "{0196C531-C8E3-426E-8577-ECE68D211D09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH.Assessment.Api", "BH.Assessment.Api\BH.Assessment.Api.csproj", "{C4685F5F-E8A0-480F-9946-F76C036ACF0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BH.Assessment.Api", "BH.Assessment.Api\BH.Assessment.Api.csproj", "{C4685F5F-E8A0-480F-9946-F76C036ACF0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BH.Assessment.Application.UnitTests", "BH.Assessment.Application.UnitTests\BH.Assessment.Application.UnitTests.csproj", "{7DAD25A7-F7D4-49CB-8B33-D79B78686644}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{C4685F5F-E8A0-480F-9946-F76C036ACF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4685F5F-E8A0-480F-9946-F76C036ACF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4685F5F-E8A0-480F-9946-F76C036ACF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DAD25A7-F7D4-49CB-8B33-D79B78686644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DAD25A7-F7D4-49CB-8B33-D79B78686644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DAD25A7-F7D4-49CB-8B33-D79B78686644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DAD25A7-F7D4-49CB-8B33-D79B78686644}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{C8B27FFC-E798-4F42-AEDC-2C9016C5075E} = {F39C2249-60C7-4A71-9592-2825524794D7}
 		{0196C531-C8E3-426E-8577-ECE68D211D09} = {FCD65791-4909-4A4F-B2ED-882106C55AED}
 		{C4685F5F-E8A0-480F-9946-F76C036ACF0A} = {81E91A09-249E-45B2-AF44-E137A03738C9}
+		{7DAD25A7-F7D4-49CB-8B33-D79B78686644} = {EB7586D2-D57F-43A4-A540-5AC4D6E80F5D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {66B1D5C2-A34B-46F2-8BA9-51002AF71CEE}

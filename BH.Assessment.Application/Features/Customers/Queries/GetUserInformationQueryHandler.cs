@@ -9,7 +9,7 @@ public class GetUserInformationQueryHandler : IRequestHandler<GetUserInformation
     private readonly ICustomerRepository _customerRepository;
     private readonly IMapper _mapper;
 
-    public GetUserInformationQueryHandler(IMapper mapper, ICustomerRepository customerRepository)
+    public GetUserInformationQueryHandler(ICustomerRepository customerRepository, IMapper mapper = null)
     {
         _mapper = mapper;
         _customerRepository = customerRepository;
