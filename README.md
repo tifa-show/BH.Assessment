@@ -33,4 +33,6 @@ To use SqlServer, change `options.UseSqlite(connectionString));` to `options.Use
 
 ## Running The Application
 
-Just hit `F5` and will see the swagger UI appear to you
+- Just hit `F5` and will see the swagger UI appear to you
+
+ - You can Find `Postman Related Json Files` in `BH.Assessment.Api/Postman-related` folder and you can import it to `Postman` and play with the APIs
