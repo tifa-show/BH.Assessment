@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c6d4f9e8-fe88-4bf2-b206-45cc088b98f0",
+		"name": "Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Account For Specfied Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": \"B0788D2F-8003-43C1-92A4-EDC76A7C5DDF\",\r\n    \"initCredit\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44314/api/Account",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44314",
+					"path": [
+						"api",
+						"Account"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
